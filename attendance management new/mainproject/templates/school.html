@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Selection</title>
+    <link rel="stylesheet" href="{% static 'schoolstyles.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Select Your School</h1>
+            <p>Welcome! Please select the school to proceed further.</p>
+        </header>
+        <main>
+            <div class="school-options">
+                <!-- School of Technology -->
+                <div class="school-card" onclick="navigateTo('School of Technology')">
+                    <h2>School of Technology</h2>
+                    <p>Explore technology, innovation, and future-ready programs.</p>
+                </div>
+
+                <!-- School of Forensic Science -->
+                <div class="school-card" onclick="navigateTo('School of Forensic Science')">
+                    <h2>School of Forensic Science</h2>
+                    <p>Dive into the science of crime-solving and investigation.</p>
+                </div>
+
+                <!-- School of Law -->
+                <div class="school-card" onclick="navigateTo('School of Law')">
+                    <h2>School of Law</h2>
+                    <p>Shape the future of justice and legal studies.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="{% static 'schoolscript.js' %}"></script>
+</body>
+
+</html>
